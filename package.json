@@ -2,7 +2,7 @@
   "name": "ProblemSolving",
   "version": "1.0.0",
   "description": "",
-  "main": "Challenge06/Challenge06.js",
+  "main": "Challenge07/Challenge07.js",
   "scripts": {
     "test": "jest"
   },
