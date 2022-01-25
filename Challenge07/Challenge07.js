@@ -86,6 +86,7 @@ const objLat = (obj) => {
 // ------------------------
 const cvFormatter = (arr) => {
     var deletedItemsId= [];
+
     arr.forEach((item,index) => {
         if (item.yearsOfExperience > 1){
             if(item.firstName === null || item.lastName === null){
@@ -131,6 +132,7 @@ const cvFormatter = (arr) => {
 // ------------------------
 const applicationsStatics = (arr) => {
     console.log(arr);
+    let counter = 0;
     let result = {
         python_Devs: 0,
         javaScript_Devs: 0,
@@ -146,20 +148,19 @@ const applicationsStatics = (arr) => {
         }
         if (item.tech === 'JS'){
             result.javaScript_Devs+= 1;
+            counter++;
         }else if (item.tech === 'Python'){
             result.python_Devs += 1;
+            counter++;
         }else if (item.tech === 'Java'){
             result.java_Devs += 1;
+            counter++;
         }else if (item.tech === '.Net'){
             result.dotNet_Devs+= 1;
+            counter++;
         }
     });
-    Object.values(result).forEach((val, index) => {
-        if(index < 4 ){
-            result.totalApplicants +=val;
-        }
-    });
-
+    result.totalApplicants = counter;
     return result;
 };
 
