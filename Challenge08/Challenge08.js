@@ -147,11 +147,9 @@ const getStudents = (arr) => {
                     'Student' : item,
                     'course' : course.course
                 })
-
             }
         })
     });
-    console.log(studentCourse)
     return studentCourse;
 };
 

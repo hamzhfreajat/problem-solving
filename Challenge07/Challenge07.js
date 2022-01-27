@@ -19,7 +19,7 @@
 // ------------------------
 
 const objLat = (obj) => {
-    let firstName = obj.firstName.charAt(0).toUpperCase()+ obj.firstName.slice(1);;
+    let firstName = obj.firstName.charAt(0).toUpperCase()+ obj.firstName.slice(1);
     let lastName = obj.lastName.charAt(0).toUpperCase()+ obj.lastName.slice(1);
     return `my name is ${firstName + ' ' + lastName} I am ${obj.age} YO, and I love ${obj.hobby}.`
 };
